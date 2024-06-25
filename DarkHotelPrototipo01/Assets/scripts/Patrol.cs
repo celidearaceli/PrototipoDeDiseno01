@@ -37,7 +37,7 @@ public class Patrol : MonoBehaviour
                 myNavMeshAgent.SetDestination(personajePrincipal.transform.position);
             }
         }
-        else // Está persiguiendo al jugador
+        else // Estï¿½ persiguiendo al jugador
         {
             float distance = Vector3.Distance(personajePrincipal.transform.position, transform.position);
 
@@ -54,7 +54,7 @@ public class Patrol : MonoBehaviour
         }
     }
 
-    // Método para detectar colisiones
+    // Mï¿½todo para detectar colisiones
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject == personajePrincipal)
@@ -63,12 +63,12 @@ public class Patrol : MonoBehaviour
         }
     }
 
-    // Método para cambiar de escena
+    // Mï¿½todo para cambiar de escena
     void CambiarEscena()
     {
-        // Puedes cambiar de escena por nombre o por índice de build
-        SceneManager.LoadScene("NombreDeTuEscena");
-        // O puedes usar el índice de build de la escena:
-        // SceneManager.LoadScene(1); // Cambia al índice de build correcto de tu escena
+        // Puedes cambiar de escena por nombre o por ï¿½ndice de build
+        SceneManager.LoadScene("GameOver");
+        // O puedes usar el ï¿½ndice de build de la escena:
+        // SceneManager.LoadScene(1); // Cambia al ï¿½ndice de build correcto de tu escena
     }
 }
