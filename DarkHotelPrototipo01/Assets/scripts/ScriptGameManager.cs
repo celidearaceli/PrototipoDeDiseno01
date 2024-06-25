@@ -27,6 +27,7 @@ public class ScriptGameManager : MonoBehaviour
         // Asegurarse de que el generador esté desactivado al inicio
         if (generador != null)
         {
+            Time.timeScale = 1.0f;
             generador.SetActive(false);
             ascensor.SetActive(false);
         }
