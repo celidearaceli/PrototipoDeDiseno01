@@ -13,7 +13,7 @@ public class ScriptGenerador : MonoBehaviour
     public TextMeshProUGUI textAdvertencia;
     void Start()
     {
-        // Asegurarse de que el generador esté desactivado al inicio
+        // Asegurarse de que el generador estï¿½ desactivado al inicio
         if (ascensor != null)
         {
             ascensor.SetActive(false);
@@ -32,7 +32,7 @@ public class ScriptGenerador : MonoBehaviour
      * se llama a la funcion SumarPuntos del script ScriptGameManager.instance, y luego se destruye el objeto.*/
     private void OnCollisionExit(Collision other)
     {
-        if (other.gameObject.CompareTag("Jugador"))
+        if (other.gameObject.CompareTag("Player"))
         {
             ascensor.SetActive(true);
             objetivo.SetActive(false);

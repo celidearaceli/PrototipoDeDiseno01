@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour
 {
     private float finalTime = 0f;
-    private float timmer = 200f;
+    private float timmer = 500f;
     public TextMeshProUGUI textTimmer;
 
     void Update()
