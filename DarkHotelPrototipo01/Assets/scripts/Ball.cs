@@ -25,7 +25,7 @@ public class Ball : MonoBehaviour
      * se llama a la funcion SumarPuntos del script ScriptGameManager.instance, y luego se destruye el objeto.*/
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("Jugador"))
+        if (other.gameObject.CompareTag("Player"))
         {
             ScriptGameManager.instance.SumarPuntos(valorSuma);
             Destroy(this.gameObject);
